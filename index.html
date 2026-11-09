@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pixelday</title>
+<meta name="description" content="pixelday: un pixel art al día. Dibuja, convierte fotos en pixel art y llena tu calendario. Para iPhone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3F1EC;--ink:#141414;--accent:#FF5A1F;--muted:#5a5852}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:640px;margin:0 auto;padding:56px 20px 40px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+.mark{display:grid;grid-template-columns:repeat(2,28px);grid-template-rows:repeat(2,28px);margin-bottom:28px}
+.mark span:nth-child(1),.mark span:nth-child(4){background:var(--ink)}
+.mark span:nth-child(2){background:var(--accent)}
+.mark span:nth-child(3){background:transparent}
+h1{font-family:"Silkscreen",monospace;font-weight:700;font-size:44px;line-height:1.05;margin:0 0 12px;letter-spacing:.5px}
+.pitch{font-size:20px;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 36px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+nav a{display:inline-block;font-family:"Silkscreen",monospace;font-size:15px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:10px 14px;background:var(--paper)}
+nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--paper)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+footer{margin-top:56px;font-size:14px;color:var(--muted)}
+footer a{color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" role="img" aria-label="Logotipo de pixelday: cuadrícula de 2 por 2 píxeles"><span></span><span></span><span></span><span></span></div>
+  <h1>pixelday</h1>
+  <p class="pitch">Un pixel art al día. Tu mes, píxel a píxel.</p>
+  <p class="sub">Dibuja o convierte una foto en pixel art, llena tu calendario y comparte tus piezas como stickers. Para iPhone. Sin cuentas, sin anuncios, sin rastreo.</p>
+  <nav aria-label="Enlaces">
+    <ul>
+      <li><a href="privacy/">Privacidad</a></li>
+      <li><a href="support/">Soporte</a></li>
+      <li><a href="mailto:charvel.chedraui@gmail.com">Contacto</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <p>&copy; 2026 Guillermo C. Chedraui Sotomayor</p>
+  </footer>
+</main>
+</body>
+</html>
