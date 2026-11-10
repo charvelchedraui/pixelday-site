@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>pixelday</title>
 <meta name="description" content="pixelday: un pixel art al día. Dibuja, convierte fotos en pixel art y llena tu calendario. Para iPhone.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-180.png" type="image/png" sizes="180x180">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="theme-color" content="#5B4BF5">
+<meta property="og:image" content="https://charvelchedraui.github.io/pixelday-site/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet">
 <style>
-:root{--paper:#F3F1EC;--ink:#141414;--accent:#FF5A1F;--muted:#5a5852}
+:root{--paper:#F6F3EC;--ink:#1B1640;--accent:#5B4BF5;--muted:#575270}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 main{max-width:640px;margin:0 auto;padding:56px 20px 40px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
-.mark{display:grid;grid-template-columns:repeat(2,28px);grid-template-rows:repeat(2,28px);margin-bottom:28px}
-.mark span:nth-child(1),.mark span:nth-child(4){background:var(--ink)}
-.mark span:nth-child(2){background:var(--accent)}
-.mark span:nth-child(3){background:transparent}
+.mark{display:block;width:80px;height:80px;margin-bottom:28px}
 h1{font-family:"Silkscreen",monospace;font-weight:700;font-size:44px;line-height:1.05;margin:0 0 12px;letter-spacing:.5px}
 .pitch{font-size:20px;margin:0 0 8px}
 .sub{color:var(--muted);margin:0 0 36px}
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
-nav a{display:inline-block;font-family:"Silkscreen",monospace;font-size:15px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:10px 14px;background:var(--paper)}
-nav a:hover,nav a:focus-visible{background:var(--ink);color:var(--paper)}
+nav a{display:inline-block;font-family:"Silkscreen",monospace;font-size:15px;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:10px 14px;background:var(--paper);box-shadow:3px 3px 0 var(--ink)}
+nav a:hover,nav a:focus-visible{background:var(--accent);border-color:var(--accent);color:#fff}
 a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 footer{margin-top:56px;font-size:14px;color:var(--muted)}
 footer a{color:var(--ink)}
@@ -31,14 +33,15 @@ footer a{color:var(--ink)}
 </head>
 <body>
 <main>
-  <div class="mark" role="img" aria-label="Logotipo de pixelday: cuadrícula de 2 por 2 píxeles"><span></span><span></span><span></span><span></span></div>
+  <svg class="mark" role="img" aria-label="Logotipo de pixelday: carita sonriente en píxeles" viewBox="0 0 20 20"><rect width="20" height="20" rx="4.5" fill="#5B4BF5"/><g shape-rendering="crispEdges"><rect x="4" y="3" width="12" height="1" fill="#FFF8EC"/><rect x="3" y="4" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="4" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="5" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="5" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="6" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="6" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="7" width="3" height="1" fill="#FFF8EC"/><rect x="6" y="7" width="2" height="1" fill="#1B1640"/><rect x="8" y="7" width="4" height="1" fill="#FFF8EC"/><rect x="12" y="7" width="2" height="1" fill="#1B1640"/><rect x="14" y="7" width="3" height="1" fill="#FFF8EC"/><rect x="17" y="7" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="8" width="3" height="1" fill="#FFF8EC"/><rect x="6" y="8" width="2" height="1" fill="#1B1640"/><rect x="8" y="8" width="4" height="1" fill="#FFF8EC"/><rect x="12" y="8" width="2" height="1" fill="#1B1640"/><rect x="14" y="8" width="3" height="1" fill="#FFF8EC"/><rect x="17" y="8" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="9" width="3" height="1" fill="#FFF8EC"/><rect x="6" y="9" width="2" height="1" fill="#1B1640"/><rect x="8" y="9" width="4" height="1" fill="#FFF8EC"/><rect x="12" y="9" width="2" height="1" fill="#1B1640"/><rect x="14" y="9" width="3" height="1" fill="#FFF8EC"/><rect x="17" y="9" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="10" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="10" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="11" width="1" height="1" fill="#FFF8EC"/><rect x="4" y="11" width="2" height="1" fill="#FF8FA3"/><rect x="6" y="11" width="2" height="1" fill="#FFF8EC"/><rect x="8" y="11" width="1" height="1" fill="#1B1640"/><rect x="9" y="11" width="2" height="1" fill="#FFF8EC"/><rect x="11" y="11" width="1" height="1" fill="#1B1640"/><rect x="12" y="11" width="2" height="1" fill="#FFF8EC"/><rect x="14" y="11" width="2" height="1" fill="#FF8FA3"/><rect x="16" y="11" width="1" height="1" fill="#FFF8EC"/><rect x="17" y="11" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="12" width="1" height="1" fill="#FFF8EC"/><rect x="4" y="12" width="2" height="1" fill="#FF8FA3"/><rect x="6" y="12" width="2" height="1" fill="#FFF8EC"/><rect x="8" y="12" width="4" height="1" fill="#1B1640"/><rect x="12" y="12" width="2" height="1" fill="#FFF8EC"/><rect x="14" y="12" width="2" height="1" fill="#FF8FA3"/><rect x="16" y="12" width="1" height="1" fill="#FFF8EC"/><rect x="17" y="12" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="13" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="13" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="14" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="14" width="1" height="1" fill="#3A2CC4"/><rect x="3" y="15" width="14" height="1" fill="#FFF8EC"/><rect x="17" y="15" width="1" height="1" fill="#3A2CC4"/><rect x="4" y="16" width="12" height="1" fill="#FFF8EC"/><rect x="17" y="16" width="1" height="1" fill="#3A2CC4"/><rect x="4" y="17" width="13" height="1" fill="#3A2CC4"/></g></svg>
   <h1>pixelday</h1>
   <p class="pitch">Un pixel art al día. Tu mes, píxel a píxel.</p>
-  <p class="sub">Dibuja o convierte una foto en pixel art, llena tu calendario y comparte tus piezas como stickers. Para iPhone. Sin cuentas, sin anuncios, sin rastreo.</p>
+  <p class="sub">Dibuja o convierte una foto en pixel art, llena tu calendario y comparte tus piezas como stickers. Para iPhone. No necesitas cuenta. Sin anuncios, sin rastreo.</p>
   <nav aria-label="Enlaces">
     <ul>
       <li><a href="privacy/">Privacidad</a></li>
       <li><a href="support/">Soporte</a></li>
+      <li><a href="terms/">Términos</a></li>
       <li><a href="mailto:charvel.chedraui@gmail.com">Contacto</a></li>
     </ul>
   </nav>
