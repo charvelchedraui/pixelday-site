@@ -61,21 +61,22 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
     <p>El feed es una parte opcional de la app para iPhone donde las personas comparten su pixel del día. Para verlo o para publicar en él se pide iniciar sesión con Apple. Si inicias sesión, nuestro servidor guarda:</p>
     <ul>
       <li><strong>Identificador de cuenta de Apple:</strong> el identificador que Apple genera para pixelday. No recibimos tu contraseña, no pedimos tu nombre real y no guardamos tu correo electrónico.</li>
+      <li><strong>Foto de perfil pública opcional:</strong> la foto pequeña o su versión en pixel art que decidas guardar en tu perfil con sesión iniciada. Se muestra junto a tus publicaciones y en tu perfil público, y puedes cambiarla o quitarla. Sin cuenta, la foto de perfil se queda en este teléfono.</li>
       <li><strong>Nombre público:</strong> el nombre que tú eliges y que los demás ven junto a tus dibujos.</li>
       <li><strong>Los dibujos que publicas:</strong> los píxeles, la paleta, el tamaño y la fecha de cada dibujo que decides compartir. Ningún texto viaja con el dibujo. Compartir está apagado hasta que tú lo enciendes.</li>
       <li><strong>Reportes y bloqueos:</strong> qué dibujos reportaste y a quién bloqueaste, para ocultártelos y para revisar el contenido.</li>
       <li><strong>Datos técnicos de la sesión:</strong> una huella de tu sesión (no la clave en sí) y las fechas de creación y de último uso. Una sesión que no se usa en 90 días se borra. Para poder avisar a Apple cuando eliminas la cuenta, se guarda también la clave de renovación que Apple entrega al iniciar sesión. Para limitar intentos abusivos de inicio de sesión se guarda por poco tiempo una huella irreversible de la dirección IP.</li>
     </ul>
-    <p>Tu nombre público y los dibujos que publicas son visibles para las demás personas que usan el feed. Lo demás no se muestra a nadie. No vendemos ni compartimos estos datos, y no se usan para publicidad ni para rastrearte.</p>
+    <p>Tu nombre público, tu foto de perfil opcional y los dibujos que publicas son visibles para las demás personas que usan el feed. Lo demás no se muestra a nadie. No vendemos ni compartimos estos datos, y no se usan para publicidad ni para rastrearte.</p>
     <p>El servidor funciona sobre la infraestructura de Cloudflare, que procesa las solicitudes (incluida la dirección IP y registros técnicos) para prestar el servicio. Apple participa en el inicio de sesión según su propia política de privacidad.</p>
 
     <h3>Tus dibujos y fotos</h3>
     <p>Tus dibujos se guardan en tu dispositivo. En iPhone, si la sincronización con iCloud está activada (Ajustes de la app &gt; Copia de seguridad), también se guardan en tu propio iCloud para que los recuperes en un teléfono nuevo con la misma cuenta de Apple. Ese espacio es tuyo y lo gestiona Apple: nosotros no tenemos acceso a él. En Android, los datos de la app pueden incluirse en la copia de seguridad de tu cuenta de Google, si la tienes activada. También puedes guardar un archivo de respaldo donde quieras.</p>
-    <p>Cuando conviertes una foto en pixel art, la foto se procesa en el propio teléfono y nunca se sube a ningún sitio. Un dibujo solo llega a nuestro servidor si tú lo publicas en el feed.</p>
+    <p>La conversión de fotos se hace en tu teléfono. La foto original nunca se sube. Solo llega a nuestro servidor un dibujo que publiques en el feed, o la foto de perfil reducida que decidas guardar con sesión iniciada. Las estadísticas del perfil, los dibujos privados y las rachas locales no se suben.</p>
 
     <h3>Permisos y para qué se usan</h3>
     <ul>
-      <li><strong>Fotos (leer las fotos que elijas):</strong> para convertir en pixel art la foto que selecciones. La app solo accede a las fotos que tú eliges.</li>
+      <li><strong>Fotos (leer las fotos que elijas):</strong> para convertir en pixel art la foto que selecciones o crear una foto de perfil opcional. La app solo accede a las fotos que tú eliges.</li>
       <li><strong>Fotos (añadir imágenes):</strong> para guardar tus dibujos y stickers en tu fototeca cuando tú lo pidas.</li>
       <li><strong>Cámara:</strong> para tomar una foto y convertirla en pixel art.</li>
       <li><strong>Notificaciones:</strong> para el recordatorio diario, si lo activas. Se programa en el propio teléfono.</li>
@@ -94,7 +95,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
     <h3>Cuánto tiempo se guardan y cómo borrarlos</h3>
     <ul>
       <li><strong>Quitar un dibujo del feed:</strong> en el feed, abre el menú de tu dibujo y elige «Quitar del feed». Se borra del servidor y se queda en tu teléfono. Si ese dibujo había sido reportado u ocultado, queda una marca vacía (sin píxeles) con la fecha, para que los reportes sigan contando si vuelves a publicar ese día; se borra al eliminar la cuenta.</li>
-      <li><strong>Eliminar tu cuenta:</strong> en la app, Ajustes &gt; Cuenta &gt; «Eliminar cuenta». Se avisa a Apple para que retire el acceso de la app y se borran del servidor tu cuenta, tu nombre, todos los dibujos que publicaste, tus reportes y tus bloqueos. Única excepción: si la cuenta había sido suspendida por romper las reglas, se conserva una huella irreversible del identificador de Apple, sin ningún otro dato, para que la suspensión no se evite creando la cuenta de nuevo. Los dibujos de tu teléfono no se tocan. Si no puedes entrar a la app, escríbenos y la eliminamos nosotros.</li>
+      <li><strong>Eliminar tu cuenta:</strong> en la app, Ajustes &gt; Cuenta &gt; «Eliminar cuenta». Se avisa a Apple para que retire el acceso de la app y se borran del servidor tu cuenta, tu nombre, tu foto de perfil, todos los dibujos que publicaste, tus reportes y tus bloqueos. Única excepción: si la cuenta había sido suspendida por romper las reglas, se conserva una huella irreversible del identificador de Apple, sin ningún otro dato, para que la suspensión no se evite creando la cuenta de nuevo. Los dibujos de tu teléfono no se tocan. Si no puedes entrar a la app, escríbenos y la eliminamos nosotros.</li>
       <li><strong>Cerrar sesión</strong> no borra lo que publicaste; <strong>desinstalar la app</strong> tampoco. Para borrarlo, elimina la cuenta antes.</li>
       <li><strong>Dibujos en tu teléfono y en tu iCloud:</strong> se borran al eliminar la app y sus datos; las copias de iCloud o de Google se gestionan desde los ajustes de tu dispositivo.</li>
     </ul>
@@ -121,21 +122,22 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
     <p>The feed is an optional part of the iPhone app where people share their pixel of the day. Viewing it or publishing to it asks you to sign in with Apple. If you sign in, our server stores:</p>
     <ul>
       <li><strong>Apple account identifier:</strong> the identifier Apple generates for pixelday. We never receive your password, do not ask for your real name and do not store your email address.</li>
+      <li><strong>Optional public profile photo:</strong> the small photo or pixel-art version you choose to save to your signed-in profile. It appears next to your posts and on your public profile, and you can replace or remove it. Without an account, your profile photo stays on this phone.</li>
       <li><strong>Public name:</strong> the name you choose, shown to others next to your drawings.</li>
       <li><strong>The drawings you publish:</strong> the pixels, palette, size and date of each drawing you decide to share. No text travels with a drawing. Sharing is off until you turn it on.</li>
       <li><strong>Reports and blocks:</strong> which drawings you reported and whom you blocked, to hide them from you and to review content.</li>
       <li><strong>Technical session data:</strong> a hash of your session (not the key itself) and when it was created and last used. A session not used for 90 days is deleted. So that Apple can be told when you delete the account, the refresh key Apple hands over at sign-in is kept too. To limit abusive sign-in attempts, an irreversible hash of the IP address is kept for a short time.</li>
     </ul>
-    <p>Your public name and the drawings you publish are visible to the other people who use the feed. Nothing else is shown to anyone. We do not sell or share this data, and it is not used for advertising or to track you.</p>
+    <p>Your public name, optional profile photo and the drawings you publish are visible to the other people who use the feed. Nothing else is shown to anyone. We do not sell or share this data, and it is not used for advertising or to track you.</p>
     <p>The server runs on Cloudflare's infrastructure, which processes requests (including the IP address and technical logs) to provide the service. Apple takes part in sign-in under its own privacy policy.</p>
 
     <h3>Your drawings and photos</h3>
     <p>Your drawings are stored on your device. On iPhone, if iCloud sync is on (app Settings &gt; Backup), they are also kept in your own iCloud so you get them back on a new phone with the same Apple Account. That space is yours and is run by Apple: we have no access to it. On Android, app data may be included in your Google account's device backup if you have it turned on. You can also save a backup file wherever you like.</p>
-    <p>When you turn a photo into pixel art, the photo is processed on the phone itself and is never uploaded anywhere. A drawing reaches our server only if you publish it to the feed.</p>
+    <p>Photo conversion happens on your phone. Your original photo is never uploaded. Only a drawing you publish to the feed, or the compact profile photo you explicitly save while signed in, reaches our server. Profile statistics, private drawings and local streaks are not uploaded.</p>
 
     <h3>Permissions and why they are used</h3>
     <ul>
-      <li><strong>Photos (read the photos you select):</strong> to turn the photo you pick into pixel art. The app only accesses the photos you choose.</li>
+      <li><strong>Photos (read the photos you select):</strong> to turn the photo you pick into pixel art or make an optional profile photo. The app only accesses the photos you choose.</li>
       <li><strong>Photos (add images):</strong> to save your drawings and stickers to your photo library when you ask it to.</li>
       <li><strong>Camera:</strong> to take a photo and turn it into pixel art.</li>
       <li><strong>Notifications:</strong> for the daily reminder, if you turn it on. It is scheduled on the phone itself.</li>
@@ -154,7 +156,7 @@ footer{margin-top:48px;font-size:14px;color:var(--muted)}
     <h3>How long data is kept and how to delete it</h3>
     <ul>
       <li><strong>Remove a drawing from the feed:</strong> on the feed, open the menu on your drawing and choose "Remove from the feed". It is deleted from the server and stays on your phone. If that drawing had been reported or hidden, an empty marker (no pixels) with its date stays so the reports still count if you publish that day again; it goes when the account is deleted.</li>
-      <li><strong>Delete your account:</strong> in the app, Settings &gt; Account &gt; "Delete account". Apple is told to withdraw the app's access, and your account, your name, every drawing you published, your reports and your blocks are deleted from the server. The one exception: if the account had been suspended for breaking the rules, an irreversible hash of the Apple identifier, with no other data, is kept so the suspension cannot be undone by creating the account again. The drawings on your phone are not touched. If you cannot get into the app, email us and we will delete it for you.</li>
+      <li><strong>Delete your account:</strong> in the app, Settings &gt; Account &gt; "Delete account". Apple is told to withdraw the app's access, and your account, your name, your profile photo, every drawing you published, your reports and your blocks are deleted from the server. The one exception: if the account had been suspended for breaking the rules, an irreversible hash of the Apple identifier, with no other data, is kept so the suspension cannot be undone by creating the account again. The drawings on your phone are not touched. If you cannot get into the app, email us and we will delete it for you.</li>
       <li><strong>Signing out</strong> does not delete what you published, and neither does <strong>uninstalling the app</strong>. To delete it, delete the account first.</li>
       <li><strong>Drawings on your phone and in your iCloud:</strong> they are deleted when you delete the app and its data; iCloud or Google backup copies are managed from your device settings.</li>
     </ul>
